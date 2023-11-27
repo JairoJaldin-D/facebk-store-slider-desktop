@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box; 
+}
+
+.contenedor {
+    display: flex;
+}
+
+.izquierda {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    color: #ffffff;
+    position: relative;
+}
+
+.izquierda img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.derecha {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 1.2rem;
+}
+
+.header-top{
+    background-color: black;
+    height: 3rem;
+}
+
+.header-top p{
+    text-align: center;
+    font-size: 1.4em;
+    color: white;
+    line-height: 45px;
+}
+
+/*header entre 2 sections*/
+
+header {
+    
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+
+}
+header .menu{
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+}
+
+header h1{
+    color: black;
+    font-size: 2em;
+    margin-left: 1rem;
+}
+
+header .icons-header a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+header .icons-header a{
+    margin-left: 1rem;
+}
+
+.mr-r1{
+    margin-right: 0.7rem;
+}
+
+.mr-l1{
+    margin-left: 0.5rem;
+}
+
+.mr-l2{
+    margin-left: 0.1rem;
+}
+
+nav{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+   justify-content: center;
+   margin: 5% auto;
+   margin-left: 8.5rem;
+}
+
+nav ul li{
+    margin-right: 6rem;
+    transition: ease-out 0.5s;
+}
+
+nav ul li a{
+    color: black;
+    font-size: 1.3em;
+    text-decoration: none;
+    transition: color 0.8s ease; 
+}
+
+nav ul li a:hover {
+    color: #b33e3e; /* Cambia el color cuando el cursor está sobre el enlace */ 
+}
+
+nav ul li:hover{
+    transform: scale(1.2);
+}
+
+.nav-black{
+    color: black;
+}
+
+.nav-white{
+    color: white;
+}
+
+.contenido-derecha{
+    width: 41rem;
+    height:auto;
+    margin-top: 17rem;
+    margin-left: 5rem;
+}
+
+.contenido-derecha .titulo-contenido{
+    font-size: 5em;
+    
+}
+
+.contenido-derecha .texto-contenido{
+    padding-top: 1rem;
+    font-size: 1.1em;
+}
+
+.caja-de-contenido{
+    width: 70%;
+    display: flex;
+
+    margin-top: 2.5rem;
+    justify-content: space-between;
+}
+
+.caja-de-contenido p{
+    color: black;
+}
+
+button{
+    margin-top: 3rem;
+    padding: 1.1rem 3.6rem;
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    transition: color 0.8s ease; 
+}
+
+button:hover{
+    color: #b33e3e;
+    transform: scale(1);
+}
+
+.links-redes{
+
+    display: flex;
+    font-size: 1.5em;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 90%;
+    margin:  0 auto;
+    margin-top: 8rem;
+}
+
+.links-redes i{
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.arrows {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+    margin-top: 20px;
+    bottom: 5%;
+    left: 26%;
+}
+
+.rotateArrow-left {
+    transform: rotate(45deg); /* Rotar la flecha hacia la izquierda */
+    margin-right: 1.5rem;
+    color: black;
+    font-size: 1em;
+}
+
+.rotateArrow-right {
+    transform: rotate(-45deg); /* Rotar la flecha hacia la derecha */
+    color: black;
+    font-size: 1em;
+}
