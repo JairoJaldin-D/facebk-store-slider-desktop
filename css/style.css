@@ -122,7 +122,7 @@ nav ul li a{
 }
 
 nav ul li a:hover {
-    color: #b33e3e; /* Cambia el color cuando el cursor está sobre el enlace */ 
+    color: #b33e3e; 
 }
 
 nav ul li:hover{
@@ -207,14 +207,14 @@ button:hover{
 }
 
 .rotateArrow-left {
-    transform: rotate(45deg); /* Rotar la flecha hacia la izquierda */
+    transform: rotate(45deg); /
     margin-right: 1.5rem;
     color: black;
     font-size: 1em;
 }
 
 .rotateArrow-right {
-    transform: rotate(-45deg); /* Rotar la flecha hacia la derecha */
+    transform: rotate(-45deg); 
     color: black;
     font-size: 1em;
 }

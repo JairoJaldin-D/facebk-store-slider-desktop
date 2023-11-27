@@ -40,11 +40,9 @@
 
     <div class="contenedor">
         <div class="izquierda">
-            <!-- Usa la etiqueta img para la imagen de fondo -->
+            
             <img src="img/producto.png" alt="Imagen de fondo">
-            <!-- Contenido de la sección izquierda -->
-
-            <!-- arrows, click y slider-->
+     
             <div class="arrows">
 
                 <i class="bi bi-arrow-down-left rotateArrow-left"></i>
@@ -58,32 +56,27 @@
 
         <script>
             $(document).ready(function() {
-                // Obtén referencias a elementos importantes
                 var contenedor = $('.contenedor');
                 var izquierda = $('.izquierda');
                 var arrows = $('.arrows');
                 var imagenes = ['img/producto.png', 'img/product-2.jpg','img/product-3.jpg','img/product-4.jpg','img/product-5.jpg','img/product-6.jpg']; // Agrega aquí las rutas de tus imágenes
             
                 var currentIndex = 0;
-            
-                // Función para cambiar la imagen hacia la izquierda
+
                 function cambiarImagenIzquierda() {
                     currentIndex = (currentIndex - 1 + imagenes.length) % imagenes.length;
                     actualizarImagen();
                 }
-            
-                // Función para cambiar la imagen hacia la derecha
+ 
                 function cambiarImagenDerecha() {
                     currentIndex = (currentIndex + 1) % imagenes.length;
                     actualizarImagen();
                 }
-            
-                // Función para actualizar la imagen en la sección izquierda
+ 
                 function actualizarImagen() {
                     izquierda.find('img').attr('src', imagenes[currentIndex]);
                 }
-            
-                // Asigna eventos de clic a las flechas
+
                 arrows.find('.bi-arrow-down-left').click(cambiarImagenIzquierda);
                 arrows.find('.bi-arrow-down-right').click(cambiarImagenDerecha);
             });
