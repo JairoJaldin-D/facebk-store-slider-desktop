@@ -32,7 +32,6 @@ body {
     object-fit: cover;
 }
 
-
 .derecha {
     flex: 1;
     background-color: #ffffff;
@@ -42,6 +41,7 @@ body {
 .header-top{
     background-color: black;
     height: 3rem;
+    overflow: hidden;
 }
 
 .header-top p{
@@ -49,6 +49,13 @@ body {
     font-size: 1.4em;
     color: white;
     line-height: 45px;
+    transition: 1s ease-out;
+}
+
+.header-top p:hover{
+    transform: scale(1.2);
+    color: #b33e3e;
+    cursor: pointer;
 }
 
 /*header entre 2 sections*/
@@ -211,12 +218,14 @@ button:hover{
     margin-right: 1.5rem;
     color: black;
     font-size: 1em;
+    cursor: pointer;
 }
 
 .rotateArrow-right {
     transform: rotate(-45deg); 
     color: black;
     font-size: 1em;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {
